@@ -1,0 +1,6 @@
+if SHIELD_GAMEROYPAD
+
+config ZMK_KEYBOARD_NAME
+    default "GameROYPad"
+
+endif

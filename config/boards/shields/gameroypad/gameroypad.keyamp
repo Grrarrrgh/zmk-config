@@ -1,0 +1,28 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    1    |    2    |    3    |    4    |    5    |    6    |
+// |   TAB   |    Q    |    W    |    E    |    R    |    T    |    Y    |    |   F1    |   F2    |
+// |   CAPS  |    A    |    S    |    D    |    F    |    G    |              |   F3    |   F4    |
+// |  SHIFT  |    \    |    Z    |    X    |    C    |    V    |    B    |    |   F5    |   F6    |
+// |  CTRL   | GUI  |  ALT  | BPSC |                                          |   MUTE  | 
+// |                                                                |  SPACE  |  ENTER  |
+            bindings = <
+	&kp ESC    &kp 1    &kp 2    &kp 3     &kp 4     &kp 5     &kp 6
+    &kp TAB    &kp Q    &kp W    &kp E     &kp R     &kp T     &kp Y     &kp F1     &kp F2
+    &kp CAPS   &kp A    &kp S    &kp D     &kp F     &kp G               &kp F3     &kp F4
+    &kp LSHIFT &kp BSLH &kp Z    &kp X     &kp C     &kp V     &kp B     &kp F5     &kp F6
+    &kp LCTRL  &kp GUI  &kp LALT &kp BSPC                                &kp C_MUTE
+	                                                           &kp SPACE &kp RET
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+    };
+};
