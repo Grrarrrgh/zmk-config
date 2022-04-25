@@ -1,7 +1,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-// Current reult of keypresses empty entries are not registering, ! are unexpected
+// Current result of keypresses empty entries are not registering, ! are unexpected
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |         |         |         |         |  ! A    |  ! B    |  ! C    |
+// |         |    Q    |         |    E    |    R    |    T    |    Y    |    |   F1    |   F2    |
+// |         |    A    |         |    D    |    F    |    G    |              |   F3    |   F4    |
+// |         |  ! BSPC |    Z    |         |    C    |    V    |    B    |    |   F5    |   F6    |
+// |         |  ! CTRL |         |  ! ALT  |                                  | UNTESTED| 
+// |                                                                |  SPACE  |  ENTER  |
+// Trace checking
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |         |         |         |         |  ! A    |  ! B    |  ! C    |
 // |         |    Q    |         |    E    |    R    |    T    |    Y    |    |   F1    |   F2    |
