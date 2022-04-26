@@ -1,6 +1,6 @@
 if SHIELD_GAMEROYPAD
 
 config ZMK_KEYBOARD_NAME
-    default "gameroypad"
+    default "GameROY"
 
 endif
