@@ -19,7 +19,7 @@
     &kp TAB    &kp Q           &kp W    &kp E     &kp R     &kp T     &kp Y     &bt BT_CLR     &out OUT_BLE
     &kp CAPS   &kp A           &kp S    &kp D     &kp F     &kp G               &kp F3     &kp F4
     &kp LSHIFT &kp NON_US_BSLH &kp Z    &kp X     &kp C     &kp V     &kp B     &kp F5     &kp F6
-    &kp LCTRL  &kp LGUI        &kp LALT &kp BSPC                                &kp C_MUTE
+    &kp LCTRL  &kp LGUI        &kp LALT &kp k                                &kp C_MUTE
 	                                                                            &kp SPACE &kp RET
             >;
 
