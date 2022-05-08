@@ -5,18 +5,12 @@
 / {
 // Tap Dance defintiions go here
     behaviors {
-        td0: tap_dance_0 {
+        tdf1: tap_dance_f1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = TD_"F1_F7";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F1>, <&kp F7>;
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp F2>, <&kp F8>;
         };
     };
 
@@ -33,7 +27,7 @@
 // |                                                                |  SPACE  |  ENTER  |
             bindings = <
 	&kp ESC    &kp N1          &kp N2   &kp N3    &kp N4    &kp N5    &kp DEL
-    &kp TAB    &kp N6          &kp N7   &kp N8    &kp N9    &kp N0    &kp Y     &td0       &td1
+    &kp TAB    &kp N6          &kp N7   &kp N8    &kp N9    &kp N0    &kp Y     &tdf1      &kp F2
     &kp CAPS   &kp A           &kp S    &kp D     &kp F     &kp G               &kp F3     &kp F4
     &kp LSHIFT &kp NON_US_BSLH &kp Z    &kp X     &kp C     &kp V     &kp B     &kp F5     &kp F6
     &kp LCTRL  &kp LALT        &mo 1    &kp BSPC                                &kp D
