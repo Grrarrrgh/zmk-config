@@ -11,6 +11,13 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F1>, <&kp F7>;
+        td1: tap_dance_1
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F2>, <&kp F8>;
+        };
     };
 
     keymap {
