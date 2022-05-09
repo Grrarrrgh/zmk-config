@@ -5,18 +5,20 @@
 / {
 // Tap Dance defintiions go here
     behaviors {
-        td0: tap_dance_0 {
+        tdb: tap_dance_basic {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_BASIC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F1>, <&kp F7>;
-        td1: tap_dance_1
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
+
+        td2: tap_dance_basic_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
+            label = "TAP_DANCE_BASIC_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F2>, <&kp F8>;
+            bindings = <&kp A>, <&kp B>, <&kp C>;
         };
     };
 
