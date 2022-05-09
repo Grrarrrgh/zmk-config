@@ -5,7 +5,7 @@
 / {
 // Tap Dance defintiions go here
     behaviors {
-        tdf1: tap_dance_basic {
+        td_f1: tap_dance_basic {
             compatible = "zmk,behavior-tap-dance";
             label = "F1_F7";
             #binding-cells = <0>;
@@ -13,7 +13,7 @@
             bindings = <&kp F1>, <&kp F7>;
         };
 
-        tdf2: tap_dance_basic_2 {
+        td_f2: tap_dance_basic_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "F2_F8";
             #binding-cells = <0>;
@@ -21,7 +21,7 @@
             bindings = <&kp F2>, <&kp F8>;
         };
 
-        tdf3: tap_dance_basic_3 {
+        td_f3: tap_dance_basic_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "F3_f9";
             #binding-cells = <0>;
@@ -29,7 +29,7 @@
             bindings = <&kp F3>, <&kp F9>;
         };
 
-        tdf4: tap_dance_basic_4 {
+        td_f4: tap_dance_basic_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "F4_F10";
             #binding-cells = <0>;
@@ -37,20 +37,68 @@
             bindings = <&kp F4>, <&kp F10>;
         };
 
-        tdf5: tap_dance_basic_5 {
+        td_f5: tap_dance_basic_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "F5_F11";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F5>, <&kp F11>;
         };
-        
-        tdf6: tap_dance_basic_6 {
+
+        td_f6: tap_dance_basic_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "F6_F12";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F6>, <&kp F12>;
+        };
+        
+        td_ai: tap_dance_basic_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "A_I";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp I>;
+        };
+        
+        td_ng: tap_dance_basic_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "N_G";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N>, <&kp G>;
+        };
+        
+        td_xc: tap_dance_basic_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "X_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp X>, <&kp C>;
+        };
+        
+        td_vw: tap_dance_basic_10 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_W";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp W>;
+        };
+        
+        td_se: tap_dance_basic_11 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "S_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp S>, <&kp E>;
+        };
+        
+        td_ml: tap_dance_basic_12 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "M_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp M>, <&kp L>;
         };
     };
 
@@ -59,17 +107,17 @@
 
         default_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    1    |    2    |    3    |    4    |    5    |   DEL   |
-// |   TAB   |    6    |    7    |    8    |    9    |    0    |    Y    |    |   F1    |   F2    |
-// |   CAPS  |    A    |    S    |    D    |    F    |    G    |              |   F3    |   F4    |
-// |  SHIFT  |    \    |    Z    |    X    |    C    |    V    |    B    |    |   F5    |   F6    |
-// |  CTRL   | ALT  |  Fn  | BPSC |                                           |   D     | 
-// |                                                                |  SPACE  |  ENTER  |
+//   |  ESC  |    1    |    2    |    3    |    4    |    5    |   DEL   |
+// |   TAB   |    6    |    7    |    8    |    9    |    0    |    Y    |   |  F1 F7  |  F2 F8  |
+// |   CAPS    |   A I   |   N G   |   X C   |   V W   |    P    |           |  F3 F9  |  F4 F10 |
+// | SHIFT |   \ Z   |   S E    |   M L   |    K    |    O    |    /    |    |  F5 F11 |  F6 F12 |
+//   |   CTRL    |    ALT     |    Fn     |    BPSC    |                     |   D     | 
+//                                                                 |  SPACE  |  ENTER  |
             bindings = <
 	&kp ESC    &kp N1          &kp N2   &kp N3    &kp N4    &kp N5    &kp DEL
-    &kp TAB    &kp N6          &kp N7   &kp N8    &kp N9    &kp N0    &kp Y     &tdf1      &tdf2
-    &kp CAPS   &kp A           &kp S    &kp D     &kp F     &kp G               &tdf3      &tdf4
-    &kp LSHIFT &kp NON_US_BSLH &kp Z    &kp X     &kp C     &kp V     &kp B     &tdf5      &tdf6
+    &kp TAB    &kp N6          &kp N7   &kp N8    &kp N9    &kp N0    &kp Y     &td_f1      &td_f2
+    &kp CAPS   &td_ai          &td_ng   &td_xc    &td_vw    &kp P               &td_f3      &td_f4
+    &kp LSHIFT &kp NON_US_BSLH &td_se   &td_ml    &kp K     &kp O     &kp FSLH  &td_f5      &td_f6
     &kp LCTRL  &kp LALT        &mo 1    &kp BSPC                                &kp D
 	                                                                            &kp SPACE &kp RET
             >;
