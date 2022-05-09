@@ -11,15 +11,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F1>, <&kp F7>;
-        };
-    behaviors {
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp F2>, <&kp F8>;
-        };
     };
 
     keymap {
@@ -42,7 +33,7 @@
 	                                                                            &kp SPACE &kp RET
             >;
 
-            sensor-bindings = <&inc_dec_kp LBKT RBKT>;
+            sensor-bindings = <&inc_dec_kp RBKT LBKT>;
         };
         fn_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
