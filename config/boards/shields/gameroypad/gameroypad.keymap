@@ -101,13 +101,21 @@
             bindings = <&kp M>, <&kp L>;
         };
 
-        ht1: hold_tap {
+        ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
+            bindings = <&kp NON_US_BSLH>, <&kp Z>;
+        };
+        
+        td_z: tap_dance_basic_13 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BSLSH_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&kp NON_US_BSLH>, <&kp Z>;
         };
     };
@@ -127,7 +135,7 @@
 	&kp ESC    &kp N1          &kp N2   &kp N3    &kp N4    &kp N5    &kp DEL
     &kp TAB    &kp N6          &kp N7   &kp N8    &kp N9    &kp N0    &kp Y     &td_f1      &td_f2
     &kp CAPS   &td_ai          &td_ng   &td_xc    &td_vw    &kp P               &td_f3      &td_f4
-    &kp LSHIFT &ht1            &td_se   &td_ml    &kp K     &kp O     &kp FSLH  &td_f5      &td_f6
+    &kp LSHIFT &td_z           &td_se   &td_ml    &kp K     &kp O     &kp FSLH  &td_f5      &td_f6
     &kp LCTRL  &kp LALT        &mo 1    &kp BSPC                                &kp D
 	                                                                            &kp SPACE &kp RET
             >;
