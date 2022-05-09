@@ -19,6 +19,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F2>, <&kp F8>;
+        };
 
         tdf3: tap_dance_basic_3 {
             compatible = "zmk,behavior-tap-dance";
@@ -26,6 +27,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F3>, <&kp F9>;
+        };
 
         tdf4: tap_dance_basic_4 {
             compatible = "zmk,behavior-tap-dance";
@@ -33,6 +35,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F4>, <&kp F10>;
+        };
 
         tdf5: tap_dance_basic_5 {
             compatible = "zmk,behavior-tap-dance";
@@ -40,7 +43,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F5>, <&kp F11>;
-
+        };
+        
         tdf6: tap_dance_basic_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "F6_F12";
