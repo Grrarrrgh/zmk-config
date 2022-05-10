@@ -108,7 +108,7 @@
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp NON_US_BSLH>, <&kp Z>;
+            bindings = <&kp>, <&kp>;
         };
         
         td_z: tap_dance_basic_13 {
