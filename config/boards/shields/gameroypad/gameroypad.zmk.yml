@@ -1,9 +1,0 @@
-file_format: "1"
-id: gameroypad
-name: gameroypad
-type: shield
-url: https://keystonecaps.store/?product=game-roy-advance-game-pad-group-buy-preorder
-requires: [pro_micro]
-features:
-  - keys
-  - encoder
