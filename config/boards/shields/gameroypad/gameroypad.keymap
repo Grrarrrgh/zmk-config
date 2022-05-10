@@ -104,7 +104,7 @@
         ht_z: hold_tap_z {
             compatible = "zmk,behavior-hold-tap";
             label = "Z_BSLSH";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
