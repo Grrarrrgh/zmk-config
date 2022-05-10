@@ -1,0 +1,5 @@
+config SHIELD_GAMEROY_ADVANCED_LEFT
+	def_bool $(shields_list_contains,gameroy_advanced_left)
+
+config SHIELD_GAMEROY_ADVANCED_RIGHT
+	def_bool $(shields_list_contains,gameroy_advanced_right)

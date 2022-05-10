@@ -1,0 +1,15 @@
+if SHIELD_GAMEROY_ADVANCED_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "GameROY Advanced"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+endif
+
+if SHIELD_GAMEROY_ADVANCED_LEFT || SHIELD_GAMEROY_ADVANCED_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
