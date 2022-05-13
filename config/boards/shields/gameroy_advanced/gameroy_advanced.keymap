@@ -38,9 +38,9 @@
 // | Left enconder vol up down                                                                              Right enconder page up down  
             bindings = <
 	&bootloader &none          &none   &none    &none    &none    &none                                                                       &none      &none       &none   &none     &none      &none     &none
-    &none       &none          &none   &none    &none    &none    &none      &bt BT_SEL_1     &bt BT_SEL_2           &none    &none           &none      &none       &none   &none     &none      &none     &none
-    &none       &none          &none   &none    &none    &none               &bt BT_SEL_3     &bt BT_SEL_4          &none     &none                      &none       &none   &none     &none      &none     &none 
-    &none       &none          &none   &none    &none    &none    &none      &bt BT_SEL_5     &bt BT_SEL_6        &bt BT_CLR  &none           &none      &none       &none   &none     &none      &none     &none
+    &none       &none          &none   &none    &none    &none    &none      &none       &none                       &none    &none           &none      &none       &none   &none     &none      &none     &none
+    &none       &none          &none   &none    &none    &none               &none       &none                       &none    &none                      &none       &none   &none     &none      &none     &none 
+    &none       &none          &none   &none    &none    &none    &none      &none       &none                       &none    &none           &none      &none       &none   &none     &none      &none     &none
     &none       &none          &none   &none                                 &none                                            &none                                                  &none  &none   &none   &none
 	                                                                  &none  &none                                            &none   &none       
             >;
