@@ -1,6 +1,6 @@
 file_format: "1"
-id: gameroypad
-name: gameroypad
+id: gameroy_advanced
+name: gameroy_advanced
 type: shield
 url: https://keystonecaps.store/?product=game-roy-advance-game-pad-group-buy-preorder
 requires: [pro_micro]
