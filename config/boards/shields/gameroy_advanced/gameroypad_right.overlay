@@ -1,4 +1,4 @@
-#include "gameroy_advanced.dtsi"
+#include "gameroypad.dtsi"
 
 &default_transform {
 	col-offset = <9>;

@@ -1,4 +1,4 @@
-#include "gameroy_advanced.dtsi"
+#include "gameroypad.dtsi"
 
 &kscan0 {
 	col-gpios
