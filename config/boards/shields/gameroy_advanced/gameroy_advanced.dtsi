@@ -60,6 +60,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) 						RC(4,8)                     RC(4,9)       
 		b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
 		status = "okay";
+	};
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
