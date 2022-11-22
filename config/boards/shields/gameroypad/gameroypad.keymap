@@ -17,8 +17,8 @@
 // |                                                                |  SPACE  |  ENTER  |
             bindings = <
 	&kp ESC    &kp N1          &kp N2   &kp N3    &kp N4    &kp N5    &kp N6
-    &kp TAB    &kp Q           &kp W    &kp E     &kp R     &kp T     &kp Y     &kp 7     &kp 8
-    &kp CAPS   &kp A           &kp S    &kp D     &kp F     &kp G               &kp 9     &kp 0
+    &kp TAB    &kp Q           &kp W    &kp E     &kp R     &kp T     &kp Y     &kp N7     &kp N8
+    &kp CAPS   &kp A           &kp S    &kp D     &kp F     &kp G               &kp N9     &kp N0
     &kp LSHIFT &kp NON_US_BSLH &kp Z    &kp X     &kp C     &kp V     &kp B     &kp M     &kp I
     &kp LCTRL  &kp LGUI        &kp LALT &mo 1                                &kp BSPC
 	                                                              &kp SPACE &kp RET
